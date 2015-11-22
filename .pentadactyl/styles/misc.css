@@ -1,0 +1,21 @@
+@-moz-document domain("tdkterim.gov.tr")   {
+    span.comics, span.comick, p.thomicb {
+        font-family: Sans-serif !important;
+    }
+}  
+@-moz-document regexp("http://tdkterim.gov.tr/bts/arama/.*")   {
+    body {
+        width: 800px !important;
+        margin: auto !important;
+    }
+}  
+
+@-moz-document domain("m.seslisozluk.com")   {
+    body {
+        margin: auto !important;
+    }
+    img, body>div>div>div:last-of-type {
+        display: none !important;
+    }
+}
+

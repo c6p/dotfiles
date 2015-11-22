@@ -1,0 +1,8 @@
+XDG_DESKTOP_DIR="/home/can/data/desktop"
+XDG_DOWNLOAD_DIR="/home/can/data/downloads"
+XDG_TEMPLATES_DIR="/home/can/data/desktop/.templates"
+XDG_PUBLICSHARE_DIR="/home/can/data/public"
+XDG_DOCUMENTS_DIR="/home/can/data/desktop/documents"
+XDG_MUSIC_DIR="/home/can/data/music"
+XDG_PICTURES_DIR="/home/can/data/images"
+XDG_VIDEOS_DIR="/home/can/data/videos"

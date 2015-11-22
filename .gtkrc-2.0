@@ -1,0 +1,4 @@
+gtk-icon-theme-name = "Tango"
+gtk-theme-name = "absolute-squared"
+gtk-font-name = "DejaVu Sans 9"
+gtk-tooltip-timeout=0

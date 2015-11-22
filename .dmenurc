@@ -1,0 +1,3 @@
+DMENU="dmenu -i -fn BitstreamVeraSansMono-10 -nb #fff -nf #333 -sb #cef -sf #000"
+LEN_MAX=181
+XCMENUCTRL_DMENU=$DMENU' -l 20 -w 566 -x 400 -y 20'

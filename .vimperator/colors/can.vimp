@@ -1,0 +1,16 @@
+hi Normal               color: black; background: #ffffff; font-size: 9pt;
+
+hi CmdLine              color: black; background: #e0dfde;
+hi StatusLine           color: black; background: #ffffff;
+"hi CompDesc             color: #c6c6c6; width: 50%; font-size: 9pt;
+"hi CompIcon             width: 16px; min-width: 16px; display: inline-block; margin-right: .5ex;
+
+"hi HintElem                 background-color: #f0dfaf;  color: black;
+"hi CompItem[selected]       background: #f0dfaf;
+
+"hi Font               font-size: 9pt; font-family: "Bitstream Vera Sans Mono";
+"hi FontProportional         font-size: 9pt; font-family: "Bitstream Vera Sans";
+"hi CompItem                 font-size: 9pt; font-family: "Bitstream Vera Sans Mono";
+hi Filter                   color: blue; font-weight: bold;
+
+hi TabNumber            color: black; font-weight: bold;

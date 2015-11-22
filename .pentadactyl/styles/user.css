@@ -1,0 +1,20 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+#personal-bookmarks .bookmark-item > .toolbarbutton-text { display:none!important }
+#personal-bookmarks { min-height:0 !important; }
+
+#tabbrowser-tabs ~ #alltabs-button { display: none !important; }
+.tab-close-button{ display:none !important; }
+
+#bookmarks-menu-button[cui-areatype="toolbar"] > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon {
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
+}
+toolbarbutton {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+#liberator-statusline toolbarbutton {
+ border-width: 0px !important;
+}
+

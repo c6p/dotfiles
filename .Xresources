@@ -1,0 +1,46 @@
+Xft.autohint: 0
+
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+! urxvt
+URxvt*saveLines:10000
+URxvt*scrollstyle: plain
+URxvt*scrollBar_right: true
+URxvt*geometry: 84×30
+URxvt*font: xft:DejaVu\ Sans Mono\ for\ Powerline-8
+!! clickable links
+URxvt.perl-ext-common: default,vtwheel,url-select
+URxvt.urlLauncher: /usr/bin/firefox
+URxvt.urlButton: 3
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.underlineURLs: true
+URxvt.letterSpace: -1
+URxvt.lineSpace: 1
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
+!lightmonad: 3C3 = 6 combinations
+*background: #eeeeee
+*foreground: #111111
+*cursorColor: #999999
+*color0: #333333
+*color8: #111111
+*color1: #cf0000
+*color9: #af0000
+*color2: #00a700
+*color10: #008700
+*color3: #cf7f00
+*color11: #af5f00
+*color4: #007fcf
+*color12: #005faf
+*color5: #a700a7
+*color13: #870087
+*color6: #00a7a7
+*color14: #008787
+*color7: #cccccc
+*color15: #eeeeee
+

@@ -1,0 +1,62 @@
+@-moz-document domain("mail.google.com"){
+
+/* space on the right of mail body */
+td[class="Bu"]>div[class="nH"] {
+    display: none
+}   
+/*** mailbox items ***/
+/* "to" "date" text  */
+div[class="yW NyC7Y"], div[class="apm"]  {
+    font-size: 90% !important;
+    color: #999;
+}
+/* item handle */
+.xY  {
+    height: 2ex !important;
+}
+/* indicator (important etc.) */
+.apd {
+    padding: 0 0 0 0 !important;
+}
+/* item text container paddings */
+.xY.apA, .xY.apE {
+    padding-top: 0 !important;
+}
+.xY.apy, .xY.apt, .xY.apx {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+/*** ***/
+}
+
+@-moz-document regexp("https?://www.google.*/reader/.*")   {
+
+div#gbqlw { display: none !important; }
+div#gb { height: 25px !important; }
+div#gbx1 { height: 0 !important; }
+#gbq2 {
+    margin: 0 !important;
+    padding: 0 !important; }
+form#gbqf {
+    position: absolute !important;
+    margin: 0 !important;
+    padding: 5px !important;
+    width: 225px; }
+div#gbqfqw { width: 190px !important; }
+span.gbqfi { margin: 7px !important; }
+div#gbqfbw { margin: 0px !important; }
+fieldset#gbqff { width: 195px !important; }
+button#gbqfb { padding: 0 !important; min-width: 29px !important; }
+span#gbqfi { margin: 0 !important; }
+div#gbu { 
+padding: 0 !important; 
+margin: 0 !important; 
+top: 0px !important;
+z-index: 991 !important;
+}
+span#gbi4t { color: #ccc !important; }
+div#lhn-add-subscription-section { height: 35px !important; }
+span#lhn-add-subscription { top: 20px !important;  }
+
+}
+

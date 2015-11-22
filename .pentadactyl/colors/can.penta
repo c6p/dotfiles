@@ -1,0 +1,11 @@
+hi StatusLineNormal         color: black; background: #e0dfde;
+hi StatusLineBroken         color: black; background: #dca3a3
+hi StatusLineExtended       color: black; background: #94bff3
+hi StatusLineSecure         color: black; background: #72d5a3
+hi HintElem                 background-color: #f0dfaf;  color: black;
+hi CompItem[selected]       background: #f0dfaf;
+
+hi FontFixed                font-size: 9pt; font-family: "Bitstream Vera Sans Mono";
+hi FontProportional         font-size: 9pt; font-family: "Bitstream Vera Sans";
+hi CompItem                 font-size: 9pt; font-family: "Bitstream Vera Sans Mono";
+hi Filter                   color: blue; font-weight: bold;

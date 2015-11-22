@@ -1,0 +1,13 @@
+"hg6956
+
+"loadplugins '\.(js|penta)$'
+"group user
+"colorscheme can
+"map -count -modes=n,v <C-d> <count>:downloads<Space><Return>
+"map -count -modes=n,v <C-b> <count>:sidebar Bookmarks<Space><Return>
+"set passkeys+=mail.google.com:gm%*jJkKcCrusad
+"autocmd LocationChange "https://docs.google.com/*" :normal! <C-z>
+"so ~/.pentadactyl/styles/user.css
+
+
+" vim: set ft=pentadactyl:

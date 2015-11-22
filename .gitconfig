@@ -1,0 +1,6 @@
+[include]
+    path = ~/._secret/.gitconfig.global
+[credential]
+	helper = cache --timeout=3600
+[core]
+	autocrlf = input
