@@ -1,0 +1,89 @@
+;; (require 'org-publish)
+
+(setq org-export-date-timestamp-format "%Y-%m-%d %H:%M:%S %Z")
+(setq org-publish-project-alist
+    '(
+    ("orgfiles"
+    :base-directory "~/Dropbox/hex/www/"
+    :base-extension "org"
+    :auto-sitemap t
+    :sitemap-filename "journal.org"
+    :sitemap-title "Journal"
+    :sitemap-sort-files anti-chronologically
+    ;:sitemap-file-entry-format "%d - %t"
+    :publishing-directory "~/Dropbox/Public/hex/"
+    :recursive t
+    :publishing-function org-html-publish-to-html
+    :headline-levels 4
+    :section-numbers nil
+    :table-of-contents nil
+    :author nil
+    :html-preamble "<div id=\"header\"><a href=\"journal.html\"><h1>HEX</h1></a></div>"
+    :html-postamble "<div id=\"footer\"><a href=\"mailto:can6dev@gmail.com\">Can Altıparmak</a> - 2012 <a href=\"rss2.xml\">RSS</a></div>"
+    :html-head "<link rel=\"stylesheet\"
+    href=\"static/default.css\" type=\"text/css\"/>"
+    )
+
+    ("static"
+    :base-directory "~/Dropbox/hex/www/"
+    :base-extension "jpg\\|gif\\|png\\|css\\|js\\|ogv"
+    :publishing-directory "~/Dropbox/Public/hex/"
+    :recursive t
+    :publishing-function org-publish-attachment)
+
+    ("org" :components ("orgfiles" "static"))
+    ))
+
+(setq org-publish-project-alist
+    '(
+    ("orgfiles"
+    :base-directory "~/Dropbox/q/"
+    :base-extension "org"
+    :auto-sitemap t
+    :sitemap-filename "index.org"
+    :sitemap-title ""
+    :sitemap-sort-files anti-chronologically
+    ;:sitemap-file-entry-format "%d - %t"
+    :publishing-directory "~/Dropbox/Public/q/"
+    :recursive t
+    :publishing-function org-html-publish-to-html
+    :headline-levels 4
+    :section-numbers nil
+    :table-of-contents nil
+    :author nil
+    :html-preamble "<div id=\"header\"><a href=\"index.html\">\&larr; Index</a></div>"
+    :html-postamble "<div id=\"footer\"></div>"
+    :html-head "<link rel=\"stylesheet\"
+    href=\"static/default.css\" type=\"text/css\"/>"
+    )
+
+    ("static"
+    :base-directory "~/Dropbox/q/"
+    :base-extension "jpg\\|gif\\|png\\|css\\|js\\|ogv"
+    :publishing-directory "~/Dropbox/Public/q/"
+    :recursive t
+    :publishing-function org-publish-attachment)
+
+    ("org" :components ("orgfiles" "static"))
+    ))
+
+(defun hex-rss ()
+    (interactive)
+    (shell-command "/usr/bin/python2 /home/can/run/hex-rss.py"))
+
+
+(setq org-publish-project-alist
+    '(
+    ("orgfiles"
+    :base-directory "~/Dropbox/Projects/"
+    :include ("proseedda.org")
+    :headline-levels 4
+    :publishing-directory "~/Dropbox/Public/proseedda/"
+    :publishing-function org-html-publish-to-html
+    :html-postamble nil
+    :html-head "<link rel=\"stylesheet\"
+    href=\"static/default.css\" type=\"text/css\"/>"
+    )
+
+    ("org" :components ("orgfiles"))
+    ))

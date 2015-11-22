@@ -1,0 +1,4 @@
+(defun now ()
+  (interactive)                 ; permit invocation in minibuffer
+  (insert (format-time-string "%A, %B %e, %Y - %H:%M")))
+

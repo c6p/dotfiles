@@ -1,0 +1,15 @@
+#!/bin/bash
+
+BAT0=$(udevadm info --path=/sys/class/power_supply/BAT0)
+#AC=$(udevadm info --path=/sys/class/power_supply/AC)
+
+bat_percent=$(echo "$BAT0" | awk -F= '$1=="E: POWER_SUPPLY_CAPACITY" {print $2}')
+bat_status=$(echo "$BAT0" | awk -F= '$1=="E: POWER_SUPPLY_STATUS" {print $2}')
+ac_online=$(udevadm info --path=/sys/class/power_supply/AC | awk -F= '$1=="E: POWER_SUPPLY_ONLINE" {print $2}')
+
+# fix >100% capacity
+if [ $bat_percent -gt 100 ]; then
+    bat_percent=100
+fi
+
+echo $ac_online $bat_status $bat_percent%

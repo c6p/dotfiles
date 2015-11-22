@@ -1,0 +1,30 @@
+[default]
+use-filedir-conf=yes
+# Write your default config options here!
+
+# utf8 subtitles
+utf8=true
+#subfont-text-scale=2.5
+ass=1
+#embeddedfonts=1
+ass-hinting=7
+#ass-force-style=Default.Bold=1
+ass-use-margins=1
+font="DejaVu Sans:style=Bold"
+ass-color="ffffaa00"
+
+# expand video, subtitles on black borders
+# but have a problem, not widescreen movies have gray boundaries on sides, which is not redrawn
+#vf=expand=:::::5/4:
+#vf=eq2
+
+# normalize audio volume
+af=volnorm
+
+msglevel=all=5
+vo=xv
+ao=alsa
+
+sub-fuzziness=1
+#prefer-ipv4 = yes
+nolirc=yes
